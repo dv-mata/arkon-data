@@ -1,0 +1,46 @@
+@mixin media($consulta) {
+  $media-max-sm: "(max-width: 575px)"; 
+  $media-max-md: "(max-width: 767px)"; 
+  $media-max-lg: "(max-width: 991px)"; 
+  $media-ssm: "(min-width: 480px)"; 
+  $media-sm: "(min-width: 576px)"; 
+  $media-md: "(min-width: 768px)"; 
+  $media-lg: "(min-width: 992px)"; 
+  $media-xl: "(min-width: 1600px)";
+
+  @if $consulta==ssm {
+    @media #{$media-ssm} {
+      @content;
+    }
+  }
+
+  @if $consulta==sm {
+    @media #{$media-sm} {
+      @content;
+    }
+  } @else if $consulta==md {
+    @media #{$media-md} {
+      @content;
+    }
+  } @else if $consulta==lg {
+    @media #{$media-lg} {
+      @content;
+    }
+  } @else if $consulta==xl {
+    @media #{$media-xl} {
+      @content;
+    }
+  } @else if $consulta==max-md {
+    @media #{$media-max-md} {
+      @content;
+    }
+  } @else if $consulta==max-lg {
+    @media #{$media-max-lg} {
+      @content;
+    }
+  } @else if $consulta==max-sm {
+    @media #{$media-max-sm} {
+      @content;
+    }
+  }
+}

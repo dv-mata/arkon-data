@@ -1,0 +1,143 @@
+.banner-home {
+  position: relative;
+
+  &__background {
+    width: 100%;
+  }
+
+  &-mobile-background {
+    @include media(max-md) {
+      background: url("../img/banner-home-mobile.jpg");
+      min-height: 80vh;
+      align-items: center;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    color: #fff;
+
+    @include media(md) {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+    }
+
+    &__heading {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+      font-size: 2.2rem;
+
+      @include media(md) {
+        margin-top: 250px;
+      }
+
+      @include media(lg) {
+        font-size: 3.2rem;
+      }
+
+      .ampersand {
+        line-height: 0.8;
+        font-size: 195%;
+
+        @include media(md) {
+          margin-left: -2rem;
+          font-size: 295%;
+        }
+      }
+    }
+  }
+}
+
+.control-data-section {
+  box-shadow: 0px 15px 15px -5px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
+
+  @include media(md) {
+    background: url("../img/back-black-and-white-buildings-14351942.png") no-repeat center bottom/ cover;
+  }
+}
+
+.demo-form-container {
+  position: relative;
+  margin-top: 80px;
+
+  @include media(md) {
+    margin-top: 150px;
+  }
+
+  * {
+    z-index: 10;
+  }
+
+  .sub-heading {
+    line-height: 0.9;
+    font-size: 27px;
+    font-weight: 500;
+
+    @include media(md) {
+      font-size: 35px;
+    }
+
+    strong {
+      font-size: 3.5rem;
+
+      @include media(md) {
+        font-size: 5rem;
+      }
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 0 70px 70px 0;
+    background: linear-gradient(110deg, rgba(12, 86, 153, 1) 0%, rgba(60, 192, 203, 1) 100%);
+    z-index: 0;
+    width: 100vw;
+
+    @include media(md) {
+      width: 65vw;
+    }
+  }
+
+  .mock-foot {
+    z-index: 5;
+    height: 110px;
+    width: 100%;
+    background: #0d2643;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.solution-item {
+  p {
+    line-height: 25px;
+  }
+
+  strong {
+    font-size: 14px;
+  }
+
+  img {
+    max-width: 105px;
+  }
+}
+
+.gray-rectangle {
+  position: relative;
+  overflow: hidden;
+  padding-top: 15px;
+  background: linear-gradient(153deg, transparent 0%, transparent 32%, #efefef 32%, #efefef 100%);
+  @include media(md) {
+    padding-top: 80px;
+  }
+}

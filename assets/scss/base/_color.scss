@@ -1,0 +1,31 @@
+$white: #fff;
+$blue: #019fdc;
+$light-blue: #174985;
+$dark-blue: #0d2643;
+$electric-blue: #009FDC;
+$cyan: #3dc0cb;
+$black: #071526;
+
+.color-white {
+  color: $white;
+}
+
+.color-cyan {
+  color: $cyan;
+}
+
+.color-light-blue{
+  color: $light-blue;
+}
+
+.color-electric-blue{
+  color: $electric-blue;
+}
+
+.color-dark-blue {
+  color: $dark-blue;
+}
+
+.bg-black {
+  background-color: $black;
+}

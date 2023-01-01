@@ -1,0 +1,52 @@
+.btn {
+  padding: 10px 60px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  line-height: 19px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &-template-1 {
+    background-color: $white;
+    color: $blue;
+
+    &:hover, &:focus {
+      background-color: $white;
+      color: $blue;
+    }
+  }
+
+  &-template-2 {
+    background: $cyan;
+    color: $white;
+
+    &:hover, &:focus {
+      background: $cyan;
+      color: $white;
+    }
+  }
+
+  &-template-3 {
+    background: $blue;
+    color: $white;
+
+    &:hover, &:focus {
+      background: $blue;
+      color: $white;
+    }
+  }
+
+  &-template-4 {
+    color: $cyan;
+    background: $white;
+
+    &:hover, &:focus {
+      background: $white;
+      color: $cyan;
+    }
+  }
+}

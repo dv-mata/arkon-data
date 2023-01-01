@@ -1,0 +1,45 @@
+#demoForm {  
+  @include media(md){
+    padding-bottom: 100px;
+  }
+
+  input {
+    border-radius: 25px;
+    border: 2px solid $white;
+    padding: 12px 30px;
+    font-size: 12px;
+    line-height: 15px;
+
+    &[type="text"],
+    &[type="email"] {
+      color: $white;
+      background-color: transparent;
+
+      &:focus {
+        outline: none;
+        box-shadow: none;
+        background-color: rgba(255,255,255,0.3);
+      }
+    }
+
+    &::placeholder {
+      color: $white;
+      font-weight: bold;
+    }
+  }
+  
+  .btn-template-4{
+    color: $electric-blue;
+    font-size: 15px;
+  }
+
+  .wpcf7-not-valid-tip{
+    color: $white;
+    margin-left: 20px;
+  }
+
+  .wpcf7-response-output{
+    color: $white;
+    border-color: transparent !important;    
+  }
+}

@@ -1,0 +1,23 @@
+html,
+body {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8f8f8;
+  font-family: "Montserrat", sans-serif;
+  color: #4a4a4a;
+  font-size: 12px;
+}
+
+p {
+  line-height: 25px;
+}
+
+hr {
+  border-color: #dbdbdb;
+  opacity: 1;
+}
